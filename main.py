@@ -1,5 +1,5 @@
 
-with open('trusta_sybils.txt', 'r') as file: 
+with open('trusta_sybils_list.txt', 'r') as file: 
     SYBIL_ADDRESSES = [row.strip() for row in file]
 
 with open('addresses.txt', 'r') as file:
