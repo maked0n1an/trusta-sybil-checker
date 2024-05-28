@@ -17,7 +17,7 @@ def main():
     if sybil_len == 0:
         print('Sybils not found')
     else:        
-        message = f'Total: {sybil_len} sybil wallet(s)'
+        message = f'Total: {sybil_len} sybil wallet(s)\n'
         
         print(
             f'Sybils are found, processing them to "found_sybils.txt"'
