@@ -15,6 +15,8 @@ In the file ‘addresses.txt’ we insert addresses to see if they match their l
 ## Installation and launch
 If you don’t have knowledge about installing Python and running it, then go to the section [Links](#links):
 
+* Install libs:
+<pre><code>pip install -r requirements.txt</code></pre>
 * Go to 'trusta-sybil-checker' folder:
 <pre><code>cd trusta-sybil-checker</code></pre>
 * Launch in terminal:

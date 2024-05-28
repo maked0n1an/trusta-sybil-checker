@@ -15,6 +15,8 @@ The README in English can be found here: [README_en.md](https://github.com/maked
 ## Установка и запуск
 Если у тебя нет знаний по поводу установки Питона и его запуска, аудита софтов, то тебе в раздел [Ccылки](#ссылки):
 
+* Устанавливаем библиотеки:
+<pre><code>pip install -r requirements.txt</code></pre>
 * Заходим в папку op-bnb-bridger:
 <pre><code>cd trusta-sybil-checker</code></pre>
 * Запускаем в терминале:

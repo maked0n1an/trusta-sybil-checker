@@ -1,9 +1,15 @@
+from web3 import Web3
+
 
 with open('trusta_sybils_list.txt', 'r') as file: 
-    SYBIL_ADDRESSES = [row.strip() for row in file]
+    SYBIL_ADDRESSES = [
+        Web3.to_checksum_address(row.strip()) for row in file
+    ]
 
 with open('addresses.txt', 'r') as file:
-    OWN_ADDRESSES = [row.strip() for row in file]
+    OWN_ADDRESSES = [
+        Web3.to_checksum_address(row.strip()) for row in file
+    ]
 
 def main():
     addresses_as_sybil = []
