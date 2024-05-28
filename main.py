@@ -12,12 +12,21 @@ def main():
         if sybil in OWN_ADDRESSES:
             addresses_as_sybil.append(f'{sybil}\n')
     
-    if len(addresses_as_sybil) == 0:
+    sybil_len = len(addresses_as_sybil)
+    
+    if sybil_len == 0:
         print('Sybils not found')
-    else:
-        print('Sybils are found, processing them to \'found_sybils.txt\'')
-        with open('found_sybils.txt', 'w') as file:        
+    else:        
+        message = f'Total: {sybil_len} sybil wallet(s)'
+        
+        print(
+            f'Sybils are found, processing them to "found_sybils.txt"'
+        )
+        print(message)
+        
+        with open('found_sybils.txt', 'w') as file:
+            file.write(message)   
             file.writelines(addresses_as_sybil)
-
+            
 if __name__ == '__main__':
     main()
